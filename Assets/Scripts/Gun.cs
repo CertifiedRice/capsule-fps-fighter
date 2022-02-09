@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.Design.Serialization;
 using UnityEngine;
@@ -19,12 +20,20 @@ public class Gun : MonoBehaviour
     private bool isReloading = false;
 
     private float nextTimeToFire = 0f;
+
+    public Animator reloadAnim;
     
     
     void Start()
     {
         if (currentAmmo == -1)
             currentAmmo = maxAmmo;
+    }
+
+    void OnEnable()
+    {
+        isReloading = false;
+        reloadAnim.SetBool("reloading", false);
     }
 
     void Update()
@@ -42,6 +51,11 @@ public class Gun : MonoBehaviour
         {
             nextTimeToFire = Time.time + 1f / fireRate;
             Shoot();
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            StartCoroutine(Reload());
         }
     }
 
@@ -71,8 +85,12 @@ public class Gun : MonoBehaviour
     {
         isReloading = true;
         Debug.Log("A player is reloading");
+        
+        reloadAnim.SetBool("reloading", true);
 
         yield return new WaitForSeconds(reloadTime);
+        
+        reloadAnim.SetBool("reloading", false);
         
         currentAmmo = maxAmmo;
         isReloading = false;

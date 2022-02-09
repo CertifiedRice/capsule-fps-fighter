@@ -591,7 +591,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3258
+  m_Name: pb_Mesh14326
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1271,8 +1271,9 @@ MonoBehaviour:
   fpsCam: {fileID: 99615104}
   muzzelFlash: {fileID: 1853160269}
   impactEffect: {fileID: 1037844500}
-  maxAmmo: 10
+  maxAmmo: 25
   reloadTime: 1
+  reloadAnim: {fileID: 699215683}
 --- !u!4 &409471021 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0,
@@ -1291,7 +1292,7 @@ GameObject:
   - component: {fileID: 699215682}
   - component: {fileID: 699215683}
   m_Layer: 0
-  m_Name: WeaponHoldrt
+  m_Name: WeaponHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1336,7 +1337,7 @@ Animator:
   m_GameObject: {fileID: 699215680}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dbc0d1513f352fe4dbd98835454006d4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 35cb1ce929a577045b87748c674db1d7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1982,7 +1983,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2932
+  m_Name: pb_Mesh14274
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2145,7 +2146,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2562
+  m_Name: pb_Mesh14364
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2881,7 +2882,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14244
+  m_Name: pb_Mesh14252
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7844,8 +7845,9 @@ MonoBehaviour:
   fpsCam: {fileID: 99615104}
   muzzelFlash: {fileID: 1632512993}
   impactEffect: {fileID: 1037844500}
-  maxAmmo: 10
+  maxAmmo: 50
   reloadTime: 1
+  reloadAnim: {fileID: 699215683}
 --- !u!95 &1733419477
 Animator:
   serializedVersion: 3
